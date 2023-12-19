@@ -1,0 +1,52 @@
+@custom-selector :--heading h1, h2, h3;
+
+@custom-media --viewport-hd (max-width: 1499px);
+
+@custom-media --viewport-tablet (max-width: 991px);
+
+@custom-media --viewport-mobile (max-width: 576px);
+
+
+
+
+:root {
+  --mainColor: #12345678;
+}
+
+body {
+  color: var(--mainColor);
+  font-family: system-ui;
+  overflow-wrap: break-word;
+
+  @media (--viewport-hd) {
+    background-color: #5c5cef;
+  }
+  @media (--viewport-tablet) {
+    background-color: #7c7cef;
+  }
+  @media (--viewport-mobile) {
+    background-color: #b6b6ee;
+  }
+}
+
+:--heading {
+  font-size: 56px;
+
+  @media (--viewport-hd) {
+    font-size: 56px;
+  }
+  @media (--viewport-tablet) {
+    font-size: 32px;
+  }
+  @media (--viewport-mobile) {
+    font-size: 32px;
+  }
+}
+
+.hero {
+  border: 1px solid red;
+
+  &__text {
+    color: red;
+  }
+}
