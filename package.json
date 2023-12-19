@@ -9,7 +9,6 @@
   },
   "devDependencies": {
     "postcss-nested": "^6.0.1",
-    "postcss-pixel-to-viewport": "^1.0.2",
     "postcss-preset-env": "^9.3.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
