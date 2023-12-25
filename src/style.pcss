@@ -1,52 +1,116 @@
-@custom-selector :--heading h1, h2, h3;
-
-@custom-media --viewport-hd (max-width: 1499px);
-
-@custom-media --viewport-tablet (max-width: 991px);
-
-@custom-media --viewport-mobile (max-width: 576px);
-
-
-
-
-:root {
-  --mainColor: #12345678;
-}
+@import "assets/vars.pcss";
 
 body {
-  color: var(--mainColor);
+  position: relative;
+  height: 100%;
+  margin: 0;
+  color: #000;
   font-family: system-ui;
-  overflow-wrap: break-word;
+  font-size: 14px;
+  line-height: 1.4;
+  background-color: var(--grayWhite);
+}
 
+.container {
   @media (--viewport-hd) {
-    background-color: #5c5cef;
+    margin: 0 45px;
   }
   @media (--viewport-tablet) {
-    background-color: #7c7cef;
+    margin: 0 16px;
   }
   @media (--viewport-mobile) {
-    background-color: #b6b6ee;
+    margin: 1px 16px;
   }
 }
 
-:--heading {
-  font-size: 56px;
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
 
-  @media (--viewport-hd) {
-    font-size: 56px;
+
+.header {
+
+
+  &__content {
+    padding: 20px 45px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
   }
-  @media (--viewport-tablet) {
-    font-size: 32px;
+
+  &__right {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 20px;
   }
-  @media (--viewport-mobile) {
-    font-size: 32px;
+
+  &__phone {
+    white-space: nowrap;
+
+    color: var(--textIconGrayMedium);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 112%;
+  }
+
+  &__button {
+    white-space: nowrap;
+    padding: 9.5px 20px ;
+    border-radius: 30px;
+    background: var(--buttonDarkStatic);
+    font-size: 14px;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--grayWhite);
   }
 }
 
-.hero {
-  border: 1px solid red;
+
+
+
+.footer {
+  padding: 100px 0;
+  background-color: #E0EBF0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+
+
+  &__copyright {
+    justify-self: end;
+  }
+
+
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+  }
 
   &__text {
-    color: red;
+    font-size: 16px;
+    color: #C5C6C7;
+
+    @media (--viewport-hd) {
+      font-size: 16px;
+    }
+    @media (--viewport-tablet) {
+      font-size: 16px;
+    }
+    @media (--viewport-mobile) {
+      font-size: 16px;
+    }
   }
+}
+
+.prosto {
+  height: 1000px;
+  background: aquamarine;
 }

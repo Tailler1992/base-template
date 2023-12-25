@@ -5,10 +5,10 @@ import postcssPresetEnv from "postcss-preset-env";
 export default {
   plugins: [
     postcssNested(),
-    myPlugin(),
     postcssPresetEnv({
       stage: 1,
     }),
+    myPlugin(),
   ],
 };
 

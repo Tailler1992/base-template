@@ -1,22 +1,162 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo">
+                DOM_RU
+            </div>
 
-    <h1>ТЕСТ</h1>
+            <div class="header__right">
+                <div class="header__phone">
+                    8 800 555 35 35
+                </div>
+                <button class="header__button" type="button">
+                    позвоните мне
+                </button>
+            </div>
 
-    <div class="hero">
-      <p class="hero__text">Вот он</p>
-    </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="first-block" style="height: 560px; background-color: #bdb8dc">
+            <h1>Сделайте новый дом — умным домом</h1>
+        </section>
 
 
+        <section class="advantages">
+            <div class="advantages__wrapper">
+                <h2 class="advantages__title">Как умный дом делает вашу жизнь лучше</h2>
 
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+                <div class="advantages__content">
+                    <div class="advantages__cards">
+                        <div class="advantages__card">
+                            <div class="advantages__card-text">
+                                <p class="advantages__card-title">🔐 Будьте спокойны за безопасность</p>
+                                <p class="advantages__card-description">
+                                    Уезжая из дома, вы будете знать, что в нем происходит. Умный дом оповещает о
+                                    проникновении злоумышленников и бытовых авариях через мобильное приложение.
+                                </p>
+                            </div>
+
+                            <div class="advantages__card-text">
+                                <p class="advantages__card-title">⛅️ Создайте идеальное утро</p>
+                                <p class="advantages__card-description">
+                                    А что если по нажатию одной кнопки каждое утро будет начинаться с ароматного кофе и
+                                    приятной музыки? С помощью умного дома вы можете создать приятную утреннюю
+                                    атмосферу.
+                                </p>
+                            </div>
+
+                            <div class="advantages__card-text">
+                                <p class="advantages__card-title">⚡️ Экономьте электричество</p>
+                                <p class="advantages__card-description">
+                                    Пока вас нет дома, многие приборы работают вхолостую. Из-за этого срок службы
+                                    уменьшается, а потребление электроэнергии растет. Переложите эти заботы на умный дом
+                                    — по сценарию он отключит неиспользуемые электроприборы.
+                                </p>
+                            </div>
+
+                            <div class="advantages__card-text">
+                                <p class="advantages__card-title">⛅️ Настройте комфортный климат</p>
+                                <p class="advantages__card-description">
+                                    С умным домом можно настроить температуру, влажность и циркуляцию воздуха в каждой
+                                    зоне вашего помещения.
+                                </p>
+                            </div>
+
+                            <div class="advantages__card-text">
+                                <p class="advantages__card-title">🥳️ Создавайте приятную атмосферу</p>
+                                <p class="advantages__card-description">
+                                    С помощью сценариев вы можете создавать обстановку в доме для самых разных случаев —
+                                    яркая вечеринка с друзьями, романтическая атмосфера, комфортная работа из дома и
+                                    многое другое.
+                                </p>
+                            </div>
+
+
+                            <div class="progress-bar">
+                                <div class="progress-bar__counter">
+                                    <span class="progress-bar__start">1</span> из
+                                    <span class="progress-bar__end">5</span>
+                                </div>
+                                <div class="progress-bar__line"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="advantages__images">
+                        <div class="advantages__image-container">
+                            <div class="advantages__image-block">
+                                <img class="advantages__image" src="/images/cards-1.png" alt="slide-1">
+
+                                <div class="advantages__bottom-content">
+                                    <div class="advantages__excellence">
+                                        <div class="advantages__excellence-text">Уведомление о протечках</div>
+                                    </div>
+                                    <div class="advantages__excellence">
+                                        <div class="advantages__excellence-text">Фиксирование открытия окон и дверей
+                                        </div>
+                                    </div>
+                                    <div class="advantages__excellence">
+                                        <div class="advantages__excellence-text">Обнаружение утечки газа</div>
+                                    </div>
+                                    <div class="advantages__excellence">
+                                        <div class="advantages__excellence-text">Фиксирование дыма</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="advantages__image-container">
+                            <div class="advantages__image-block" style="background-color: red">
+                            </div>
+                        </div>
+                        <div class="advantages__image-container">
+                            <div class="advantages__image-block" style="background-color: blue">
+                            </div>
+                        </div>
+                        <div class="advantages__image-container">
+                            <div class="advantages__image-block" style="background-color: #518399">
+                            </div>
+                        </div>
+                        <div class="advantages__image-container">
+                            <div class="advantages__image-block" style="background-color: #FFB0B0">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="prosto"></section>
+
+
+    </main>
+    <footer class="footer">
+        <p>АО «ЭР-Телеком Холдинг» осуществляет обработку персональных и иных пользовательских данных в соответствии с
+           Политикой в отношении обработки персональных данных.
+        </p>
+        <p class="footer__copyright">
+            © АО «ЭР-Телеком Холдинг» 2011-2023
+        </p>
+    </footer>
+</div>
+
+<script type="module" src="/src/main.ts"></script>
+</body>
 </html>

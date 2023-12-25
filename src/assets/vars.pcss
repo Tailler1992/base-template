@@ -1,0 +1,77 @@
+/* variables */
+:root {
+  /* ---------- Main ---------- */
+  /* Gray */
+  --grayBlack: #181B21;
+  --grayDarker: #393C41;
+  --grayDark: #5C5E62;
+  --grayMedium: #74767A;
+  --grayLight: #C5C6C7;
+  --grayLighter: #F5F8FB;
+  --grayWhite: #FFFFFF;
+
+  /* Color1 */
+  --color1Main: #FF312C;
+  --color1Light: #FF7B7B;
+  --color1Lighter: #FFB0B0;
+
+  /* Color2 */
+  --color2Darker: #1E1F33;
+  --color2Dark: #518399;
+  --color2Main: #9BCDDD;
+  --color2Light: #AFDAE8;
+  --color2Lighter: #E0EBF0;
+
+  /* ---------- Text&Icon ---------- */
+  /* Gray */
+  --textIconGrayBlack: var(--grayBlack);
+  --textIconGrayDarker: var(--grayDarker);
+  --textIconGrayDark: var(--grayDark);
+  --textIconGrayMedium: var(--grayMedium);
+  --textIconGrayLight: var(--grayLight);
+  --textIconGrayLighter: var(--grayLighter);
+  --textIconGrayWhite: var(--grayWhite);
+
+  /* Color1 */
+  --textIconColor1Darker: #A61029;
+  --textIconColor1Dark: #CC1433;
+  --textIconColor1Main: var(--color1Main);
+  --textIconColor1Light: var(--color1Light);
+  --textIconColor1Lighter: var(--color1Lighter);
+
+  /* Color2 */
+  --textIconColor2Darker: #443D66;
+  --textIconColor2Dark: #554D80;
+  --textIconColor2Main: #665C99;
+  --textIconColor2Light: #897ACC;
+  --textIconColor2Lighter: #D5CCFF;
+
+  /* ---------- Button ---------- */
+  /* Main/Primary */
+  --buttonPrimaryStatic: var(--color1Main);
+  --buttonPrimaryHover: var(--color1Light);
+  --buttonPrimaryPress: var(--color1Light);
+  --buttonPrimaryDisable: var(--grayLight);
+
+  /* Main/Dark */
+  --buttonDarkStatic: var(--color2Darker);
+  --buttonDarkHover: var(--grayDark);
+  --buttonDarkPress: var(--grayDark);
+  --buttonDarkDisable: var(--grayLight);
+
+  /* Main/Secondary */
+  --buttonAccentStatic: var(--color2Lighter);
+  --buttonAccentHover:  var(--color2Light);
+  --buttonAccentPress:  var(--color2Light);
+}
+
+
+/* media */
+@custom-media --viewport-hd screen and (max-width: 1499px);
+
+@custom-media --viewport-tablet screen and (max-width: 991px);
+
+@custom-media --viewport-mobile screen and (max-width: 576px);
+
+/* custom */
+@custom-selector :--heading h1, h2, h3;
