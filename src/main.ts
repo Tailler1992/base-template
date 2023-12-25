@@ -1,10 +1,14 @@
 import "./assets/resset.pcss";
 import "./style.pcss";
 import "./assets/components/advantages.pcss";
-import initSlider from "./scripts/initSlider.ts";
+
+import "./assets/components/adv.pcss";
+import newDf from "./scripts/advantages/newDf.ts";
+//import initSlider from "./scripts/initSlider.ts";
 
 
-initSlider();
+//initSlider();
+newDf()
 
 
 // import typescriptLogo from './typescript.svg'
